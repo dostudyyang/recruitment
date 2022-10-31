@@ -1,0 +1,28 @@
+.error-msg { // error message
+  color: red;
+  text-align: center;
+  font-size: 18px;
+}
+
+.am-tab-bar{  /*Keep navigation always at the bottom*/
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: inherit; // 包裹内容
+}
+
+.sticky-header{  /*Keep the title at the top at all times*/
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/*The message text is to the right*/
+#chat-page .chat-me .am-list-extra {
+  flex-basis: auto;  /*宽度包裹内容*/
+}
+#chat-page .chat-me .am-list-content {
+  padding-right: 15px;
+  text-align: right;
+}
